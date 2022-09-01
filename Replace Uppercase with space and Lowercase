@@ -1,0 +1,16 @@
+public class App{
+    public static void main(String[] args) {
+        String str = "helloHowAreYou";
+        String sub="", str2="";
+        for(int i=0; i<str.length();i=i+1){
+        if(str.charAt(i)>=65 && str.charAt(i)<=96)
+        {
+            sub = " "+str.substring(i, i+1);
+            sub= sub.toLowerCase();
+            str2+=sub;
+        }
+        else str2+=str.charAt(i);
+    }
+    System.out.println(str2);
+    }
+}
